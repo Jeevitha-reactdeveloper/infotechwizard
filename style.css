@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #1e293b;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 10%;
+  background: white;
+}
+
+
+.companylogo img {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navlinks a:hover {
+  color: #5B6CFF;
+}
+/* Buttons */
+.btn-primary {
+  background-color:rgba(250, 18, 57, 1);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3e4ecc;
+}
+
+/* Hero Section */
+#hero {
+  background: rgba(255, 191, 202, 1);
+  padding: 80px 
+}
+
+.hero-container {
+  background-color: rgba(255, 191, 202, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Content */
+.hero-content {
+  background-color: white;
+  flex: 1;
+  max-width: 500px;
+  width: 500px;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+
+
+.hero-content h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #e11d48;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  border: 2px solid #e11d48;
+  color: #e11d48;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #e11d48;
+  color: #fff;
+}
+
+.btn-primary {
+  background:  #fa0303;
+  color: white;
+  height: 46px;
+  border-radius: 50px;
+  padding: 12px;
+}
+
+.btn-secondary {
+  background: white;
+  color: #fa0303;
+  height: 46px;
+  border-radius: 50px;
+ box-shadow: 0 4px 12px rgba(236, 8, 8, 0.89);
+ padding: 12px;
+ border-color:#fa0303 ;
+
+}
+
+.btn-primary:hover {
+  background: #be123c;
+}
+
+/* Right Content */
+.hero-image {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.girl-img {
+  position: relative;
+  z-index: 2;
+  max-width: 380px;
+  width: 100%;
+  margin-left: 90px;
+}
+
+/* Extra Info Boxes */
+.rating-box,
+.students-box {
+  position: absolute;
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.rating-box {
+  width:250px ;
+  top: 20px;
+  left: -30px;
+  margin-top: 280px;
+  z-index: 3;
+  margin-right: 180px;
+  margin-left: 98px;
+}
+
+.rating-box span{
+    color: rgba(0, 128, 0, 0.774);
+    font-size:35px;
+}
+
+.students-box {
+  bottom: 20px;
+  right: -20px;
+  width: 220px;
+  height: 80px;
+  z-index: 3;
+  display: flex;
+}
+
+.students-box img{
+    width: 50px;
+    height: 50px;
+    left: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+}
+
+
+/* Second Section */
+#second-section {
+  padding: 60px 10%;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.section-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+}
+
+.what{
+    background-color: rgba(255, 191, 202, 1);
+    margin-bottom: 10px;
+    width: 150px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 6px;
+}
+
+
+
+/* Grid Layout */
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+/* Individual Card */
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.267);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Responsive */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .rating-box,
+  .students-box {
+    position: static;   
+    margin: 15px auto;
+    display: inline-block;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    place-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .hero-container {
+    padding: 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .hero-content h3 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;   
+  }
+
+  .girl-img {
+    max-width: 80%;
+    margin-left: 0;
+  }
+
+  .services {
+    grid-template-columns: 1fr; 
+  }
+
+  .section-header h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}

@@ -49,10 +49,10 @@ The website highlights:
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](images/homepage.png)
+![Home Page](screenshots/homepage.png)
 
 ### 📦 Services Section
-![Services Section](images/services.png)
+![Services Section](screenshots/services.png)
 
 ------------------------------------------------------------
 
